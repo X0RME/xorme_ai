@@ -1,0 +1,40 @@
+#EVERY AI NATION ON STARTUP
+xorme_ai_estates_initialization_effect = {
+	if = {
+		limit = { has_estate = estate_church }
+		set_estate_privilege = estate_church_religious_state
+	}
+	if = {
+		limit = { has_estate = estate_nobles }
+		set_estate_privilege = estate_nobles_nobility_primacy
+	}
+	if = {
+		limit = { has_estate = estate_burghers }
+		set_estate_privilege = estate_burghers_land_of_commerce
+	}
+	while = {
+		limit = {
+			NOT = { crown_land_share = 35 }
+		}
+		take_estate_land_share_massive = { estate = all }
+	}
+	add_stability = 1
+	add_yearly_manpower = 0.3
+	add_years_of_income = 0.2
+	add_mil_power = 75
+}
+
+xorme_ai_add_main_3_land_rights = {
+	if = {
+		limit = { has_estate = estate_church }
+		set_estate_privilege = estate_church_land_rights
+	}
+	if = {
+		limit = { has_estate = estate_nobles }
+		set_estate_privilege = estate_nobles_land_rights
+	}
+	if = {
+		limit = { has_estate = estate_burghers }
+		set_estate_privilege = estate_burghers_land_rights
+	}
+}

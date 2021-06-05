@@ -1,0 +1,17 @@
+ai_nation = {
+	###################
+	diplomats = 1 							# ai has to reserve a diplomat for short term action so it gets an extra to put it on equal footing with player
+	free_leader_pool = 2				# ai needs to have enough pool for 1 general & 1 admiral
+	free_mil_policy = 1
+	free_adm_policy = 1
+	free_dip_policy = 1
+	###################
+	inflation_reduction = 0.03
+	yearly_corruption = -0.03
+	land_attrition = -0.25
+	land_maintenance_modifier = -0.2
+	merc_maintenance_modifier = -0.2
+	naval_maintenance_modifier = -0.2
+	fort_maintenance_modifier = -0.35
+	###################
+}
