@@ -3271,7 +3271,7 @@ estate_rajput_officer_corp = {
 		leader_land_fire = 1
 	}
 	ai_will_do = {
-		factor = 10
+		factor = 10.0
 		modifier = {
 			factor = 0
 			NOT = { has_estate_privilege = estate_rajput_officer_corp }
@@ -3280,6 +3280,10 @@ estate_rajput_officer_corp = {
 		modifier = {
 			factor = 0
 			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 10.0
+			mil_tech = 7
 		}
 	}
 }
